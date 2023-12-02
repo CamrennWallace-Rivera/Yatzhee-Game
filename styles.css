@@ -1,0 +1,52 @@
+.Title {text-align: center;}
+
+
+.die{
+    width: 100%;
+    height: 100%;;
+    padding-bottom: 5%;
+}
+.die_table {
+    margin: 0 auto;
+}
+
+.s1 {border: 2px #efefef inset; background-color: #aeafff;width: 2em;}
+
+.a {
+    text-align: right;
+    width: 100px;
+}
+
+.scoring {
+    width: 20%;
+    float: left;
+    padding-left: 20%;
+}
+
+.roll_button{
+    
+    padding-top: 50%;
+    padding-bottom: 10%;
+}
+.roll {
+    
+    border: 2px solid;
+    color: white;
+    padding: 15px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: blueviolet;
+
+}
+.h1 {
+    text-align: center;
+}
+.buttons {
+    width: 35%;
+    float: right;
+    
+}
