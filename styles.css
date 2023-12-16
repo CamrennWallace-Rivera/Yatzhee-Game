@@ -10,7 +10,7 @@
     margin: 0 auto;
 }
 .data {
-    border: solid 2px gray;
+    border: solid 1px gray;
     background-color: #AEAFFF;
     height: 2.5em;
     width: 3em;
@@ -45,7 +45,7 @@
 }
 .new {
     border: none;
-    color:blue;
+    color:#212E52;
     padding: 20px 32px;
     text-align: center;
     text-decoration: none;
@@ -53,5 +53,5 @@
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    background-color: gray;
+    background-color: #AEAFFF;
 }
