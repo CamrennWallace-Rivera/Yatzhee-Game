@@ -3,22 +3,25 @@
 <head>
     <title>Yahtzee</title>
     <link href="styles.css" rel="stylesheet">
-<!-- Name:	Camrenn Wallce - Rivera
-Course:	235
+<!-- Name:	Camrenn Wallace - Rivera
+Course:	CSC 235
 HomeWork: #2
 -->		
 </head>
 <body>
 <script langauge="JavaScript">
 
-var d = new array (0,0,0,0,0);
-var h = new array (false,false,false,false,false);
-var f = (0,0,0,0,0,0)
+var d = [0,0,0,0,0];
+var h = [false,false,false,false,false];
+    
+var f = [0,0,0,0,0,0]
+   
 var z = [0,0,0];
+    
 var finalScore = [-1,-1,-1,-1,-1,-1,-1,-1,-1];
 var p = false;
+    
 var c = 0;
-
 function roll() 
 {
     if (p) {
@@ -164,8 +167,8 @@ function total()
     <div class="Title">
         <h1>Yahtzee</h1>
     </div>
-    <div class="dice">
-        <table class="dice_table">
+    <div class="dices">
+        <table class="dices_table">
             <tr>
                 <td><img id="d0" src="pix/dice0.gif" onclick="hold(0)"></td>
                 <td><img id="d1" src="pix/dice0.gif" onclick="hold(1)"></td>
@@ -174,68 +177,57 @@ function total()
                 <td><img id="d4" src="pix/dice0.gif" onclick="hold(4)"></td>
             </tr>
         </table>
-
-    <br><br>
-
     </div>
     <div class="container">
-
         <div class="scoring">
-
             <table class="scoring_table">
-
                 <tr>
-                    <td class="a">1's</td>
-                    <td class="s1" onmouseover="scr(0)" onmouseout="clr(0)" id="s0" onclick="holdScore(0)"></td>
+                    <td class="right">1's</td>
+                    <td class="data" onmouseover="scr(0)" onmouseout="clr(0)" id="s0" onclick="holdScore(0)"></td>
                 </tr>
                 <tr>
-                    <td class="a">2's</td>
-                    <td class="s1" onmouseover="scr(1)" onmouseout="clr(1)" id="s1" onclick="holdScore(1)"></td>
+                    <td class="right">2's</td>
+                    <td class="data" onmouseover="scr(1)" onmouseout="clr(1)" id="s1" onclick="holdScore(1)"></td>
                 </tr>
                 <tr>
-                    <td class="a">3's</td>
-                    <td class="s1" onmouseover="scr(2)" onmouseout="clr(2)"  id="s2" onclick="holdScore(2)"></td>
+                    <td class="right">3's</td>
+                    <td class="data" onmouseover="scr(2)" onmouseout="clr(2)"  id="s2" onclick="holdScore(2)"></td>
                 </tr>
                 <tr>
-                    <td class="a">4's</td>
-                    <td class="s1" onmouseover="scr(3)" onmouseout="clr(3)"  id="s3" onclick="holdScore(3)"></td>
+                    <td class="right">4's</td>
+                    <td class="data" onmouseover="scr(3)" onmouseout="clr(3)"  id="s3" onclick="holdScore(3)"></td>
                 </tr> 
                 <tr>
-                    <td class="a">5's</td>
-                    <td class="s1" onmouseover="scr(4)" onmouseout="clr(4)"  id="s4" onclick="holdScore(4)"></td>
+                    <td class="right">5's</td>
+                    <td class="data" onmouseover="scr(4)" onmouseout="clr(4)"  id="s4" onclick="holdScore(4)"></td>
                 </tr>
                 <tr>
-                    <td class="a">6's</td>
-                    <td class="s1" onmouseover="scr(5)" onmouseout="clr(5)"  id="s5" onclick="holdScore(5)"></td>
+                    <td class="right">6's</td>
+                    <td class="data" onmouseover="scr(5)" onmouseout="clr(5)"  id="s5" onclick="holdScore(5)"></td>
                 </tr>
                 <tr>
-                    <td class="a">3 of a kind</td>
-                    <td class="s1" onmouseover="kin(0)" onmouseout="clrK(0)" id="z0" onclick="holdScore(6)"></td>
+                    <td class="right">3 of a kind</td>
+                    <td class="data" onmouseover="kin(0)" onmouseout="clrK(0)" id="z0" onclick="holdScore(6)"></td>
                 </tr>
                 <tr>
-                    <td class="a">4 of a kind</td>
-                    <td class="s1" onmouseover="kin(1)" onmouseout="clrK(1)" id="z1" onclick="holdScore(7)"></td>
+                    <td class="right">4 of a kind</td>
+                    <td class="data" onmouseover="kin(1)" onmouseout="clrK(1)" id="z1" onclick="holdScore(7)"></td>
                 </tr>
                 <tr>
-                    <td class="a">Yahtzee</td>
-                    <td class="s1" onmouseover="kin(2)" onmouseout="clrK(2)" id="z2" onclick="holdScore(8)"></td>
+                    <td class="right">Yahtzee</td>
+                    <td class="data" onmouseover="kin(2)" onmouseout="clrK(2)" id="z2" onclick="holdScore(8)"></td>
                 </tr>
                 <tr>
-                    <td class="a">Total</td>
-                    <td class="s1" id="total"></td>
+                    <td class="right">Total</td>
+                    <td class="data" id="total"></td>
                 </tr>
             </table>
         </div>
         <div class="buttons">
-
             <div class="roll_button">
-
                 <button class="roll" onclick="roll()">Roll</button>
-
             </div>
-
             <div class="new_button">
-                
                 <button class="new" onClick="window.location.reload();">New Game</button>
             </div>
         </div>
